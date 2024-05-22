@@ -1,0 +1,15 @@
+*.json
+!data/sample_acts.json
+!data/sample_cases.json
+acts-scraper.code-workspace
+*.txt
+uc?id=0B7XkCwpI5KDYNlNUTTlSS21pQmM
+uc?id=0B7XkCwpI5KDYNlNUTTlSS21pQmM.1
+w2vgdrive
+wget-log
+wget-log.1
+*.pyc
+scripts/inspect.py
+*-checkpoint.ipynb
+scripts/clean_json.py
+/scraper-env

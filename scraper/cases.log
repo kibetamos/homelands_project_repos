@@ -1,0 +1,824 @@
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/102430 HTTP/1.1" 200 21874
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102430
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 209, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 259, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 158, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102430
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 321, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102430
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 340, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/102431 HTTP/1.1" 200 19303
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102431
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 209, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 251, in extract_parties_from_content
+    parties_content = case_content_p[party_nos[0]:party_nos[-1]+1]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102431
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 321, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102431
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 340, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/102432 HTTP/1.1" 200 35065
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102432
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 209, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 259, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 158, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102432
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 321, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102432
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 340, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/102433 HTTP/1.1" 200 19090
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102433
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 209, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 251, in extract_parties_from_content
+    parties_content = case_content_p[party_nos[0]:party_nos[-1]+1]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102433
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 321, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102433
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 340, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/102434 HTTP/1.1" 200 23964
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102434
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 209, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 259, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 158, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102434
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 321, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102434
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 340, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/102435 HTTP/1.1" 200 22800
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102435
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 209, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 259, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 158, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102435
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 321, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102435
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 340, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/102436 HTTP/1.1" 200 21967
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102436
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 209, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 259, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 158, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102436
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 321, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102436
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 340, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/102437 HTTP/1.1" 200 19753
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102437
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 209, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 259, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 158, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102437
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 321, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102437
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 340, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/102438 HTTP/1.1" 200 21959
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102438
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 209, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 259, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 158, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102438
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 321, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102438
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 340, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/102439 HTTP/1.1" 200 19300
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102439
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 209, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 251, in extract_parties_from_content
+    parties_content = case_content_p[party_nos[0]:party_nos[-1]+1]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102439
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 321, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/102439
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 340, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/42205 HTTP/1.1" 200 22083
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42205
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42205
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42205
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/42206 HTTP/1.1" 200 22476
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42206
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42206
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42206
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/42207 HTTP/1.1" 200 24658
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42207
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 252, in extract_parties_from_content
+    parties_content = case_content_p[party_nos[0]:party_nos[-1]+1]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42207
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42207
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/42208 HTTP/1.1" 200 25636
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42208
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42208
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42208
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/42205 HTTP/1.1" 200 22083
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42205
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42205
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42205
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/42206 HTTP/1.1" 200 22476
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42206
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42206
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42206
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/42207 HTTP/1.1" 200 24658
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42207
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 252, in extract_parties_from_content
+    parties_content = case_content_p[party_nos[0]:party_nos[-1]+1]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42207
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42207
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/42208 HTTP/1.1" 200 25636
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42208
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42208
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42208
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/42205 HTTP/1.1" 200 22083
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42205
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42205
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42205
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/42206 HTTP/1.1" 200 22476
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42206
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42206
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42206
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/42207 HTTP/1.1" 200 24658
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42207
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 252, in extract_parties_from_content
+    parties_content = case_content_p[party_nos[0]:party_nos[-1]+1]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42207
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42207
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/42208 HTTP/1.1" 200 25636
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42208
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42208
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/42208
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/39705 HTTP/1.1" 200 20766
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39705
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39705
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39705
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/39706 HTTP/1.1" 200 20230
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39706
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39706
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39706
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/39707 HTTP/1.1" 200 20732
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39707
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39707
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39707
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/39708 HTTP/1.1" 200 20688
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39708
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39708
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39708
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/39709 HTTP/1.1" 200 21258
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39709
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39709
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/39709
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/233930 HTTP/1.1" 200 23794
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/233931 HTTP/1.1" 200 21757
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/233932 HTTP/1.1" 200 25498
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/233933 HTTP/1.1" 200 19888
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/233934 HTTP/1.1" 200 27020
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/232130 HTTP/1.1" 200 22004
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/232130
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/232130
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/232130
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/232131 HTTP/1.1" 200 23362
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/232131
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 252, in extract_parties_from_content
+    parties_content = case_content_p[party_nos[0]:party_nos[-1]+1]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/232131
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/232131
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/232132 HTTP/1.1" 200 27966
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/232132
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/232133 HTTP/1.1" 200 20551
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/232133
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 53, in get_case
+    parties_info = self.get_parties(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 210, in get_parties
+    self.extract_parties_from_content(soup, parties_info)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 260, in extract_parties_from_content
+    party_data = self.clean_text(party_content.get_text()).split("..")
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 159, in clean_text
+    clean_text = text.replace('…', '...', '....')
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/232133
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/232133
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 73, in get_case
+    referenced_cases = self.get_referenced_cases(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 341, in get_referenced_cases
+    link_listings = link_div[0].find_all("a", class_="akn-ref")
+IndexError: list index out of range
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): kenyalaw.org:80
+DEBUG:urllib3.connectionpool:http://kenyalaw.org:80 "GET /caselaw/cases/view/232134 HTTP/1.1" 200 35570
+ERROR:root:Case Failed: http://kenyalaw.org/caselaw/cases/view/232134
+Traceback (most recent call last):
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 67, in get_case
+    conclusion = self.get_conclusion(soup)
+  File "/home/bench/Homelands/scraper/scripts/cases_scraper.py", line 322, in get_conclusion
+    conclusion_div = soup.find_all("div", class_="akn-conclusions")[0]
+IndexError: list index out of range
