@@ -1,0 +1,6 @@
+data/*
+!data/sample_cases.json
+!data/clean_acts.txt
+*.pyc
+scripts/tmp.py
+testvenv/

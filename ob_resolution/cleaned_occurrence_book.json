@@ -1,0 +1,110 @@
+{
+  "entries": [
+    {
+      "ob_number": "1",
+      "date": "2023-08-16",
+      "time": "11:45",
+      "location": "Sunshine Primary School, Kisumu",
+      "nature_of_occurrence": "Altercation",
+      "details": "Two students were involved in a verbal altercation during lunch break.",
+      "action_taken": "School staff intervened, counseled the students, and informed their parents.",
+      "reporting_officer": {
+        "name": "James Williams",
+        "badge_id": "P78901",
+        "phone": "666-555-4444"
+      },
+      "witnesses": [
+        {
+          "name": "Sarah Green",
+          "contact": "sarah@example.com",
+          "phone": "333-222-1111"
+        },
+        {
+          "name": "Robert Wilson",
+          "contact": "robert@example.com",
+          "phone": "999-999-9999"
+        }
+      ],
+      "accused": [
+        {
+          "name": "Alex Turner",
+          "description": "Student involved in altercation",
+          "phone": "555-666-7777"
+        }
+      ],
+      "attachments": []
+    },
+    {
+      "ob_number": "2",
+      "date": "2023-08-21",
+      "time": "10:15",
+      "location": "ABC Mall, Mombasa",
+      "nature_of_occurrence": "Theft",
+      "details": "A shop reported the theft of electronic gadgets valued at Ksh 50,000.",
+      "action_taken": "Security personnel reviewed CCTV footage and informed local police.",
+      "reporting_officer": {
+        "name": "Alice Johnson",
+        "badge_id": "P98765",
+        "phone": "111-222-3333"
+      },
+      "witnesses": [
+        {
+          "name": "David Brown",
+          "contact": "david@example.com",
+          "phone": "444-444-4444"
+        }
+      ],
+      "accused": [
+        {
+          "name": "Maria Garcia",
+          "description": "Suspected shoplifter",
+          "phone": "777-888-9999"
+        }
+      ],
+      "attachments": [
+        "cctv_screenshot.jpg"
+      ]
+    },
+    {
+      "ob_number": "3",
+      "date": "2023-08-23",
+      "time": "15:30",
+      "location": "Main Street, Nairobi",
+      "nature_of_occurrence": "Traffic Accident",
+      "details": "A minor collision between two vehicles at the intersection.",
+      "action_taken": "Police officers arrived at the scene to assess the situation and ensure traffic flow.",
+      "reporting_officer": {
+        "name": "John Doe",
+        "badge_id": "P12345",
+        "phone": "123-456-7890"
+      },
+      "witnesses": [
+        {
+          "name": "Jane Smith",
+          "contact": "jane@example.com",
+          "phone": "987-654-3210"
+        },
+        {
+          "name": "Michael Johnson",
+          "contact": "michael@example.com",
+          "phone": "555-555-5555"
+        }
+      ],
+      "accused": [
+        {
+          "name": "Robert Anderson",
+          "description": "Driver of Vehicle A",
+          "phone": "222-333-4444"
+        },
+        {
+          "name": "Sarah Miller",
+          "description": "Driver of Vehicle B",
+          "phone": "444-333-2222"
+        }
+      ],
+      "attachments": [
+        "accident_photo.jpg"
+      ]
+    }
+  ]
+}
