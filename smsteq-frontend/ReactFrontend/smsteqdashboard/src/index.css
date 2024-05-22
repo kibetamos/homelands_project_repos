@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#buySenderIdModalside {
+  z-index: 1200 !important;
+}
+
+#whatsapp-btn {
+  /* position: fixed; */
+  /* width: 3rem; */
+  padding-left: 0.4em;
+  color: white;
+  font-weight: 500;
+  padding-right: 0.4em;
+  height: 2.3rem;
+  /* right: 1.875rem;
+  bottom: 1.875rem; */
+  z-index: 9999;
+  border: #40c351 !important;
+  background-color: #40c351 !important;
+  transition: all 0.3s;
+  border-radius: 10px !important;
+}
+
+#whatsapp-btn img {
+  height: 2em;
+}
+
+.whatsapp-btn-wrapper {
+  margin-top: 2em;
+  padding: 0% 12% !important;
+}
+
+@media screen and (max-width: 1299px) and (min-width: 768px) {
+  #whatsapp-btn {
+    /* position: fixed; */
+    /* width: 3rem; */
+    padding-left: 0em;
+    background-color: transparent !important;
+  }
+
+  #whatsapp-btn span {
+    display: none;
+  }
+}
